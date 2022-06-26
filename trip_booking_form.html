@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(139, 0, 0);
+        
+        }
+        h2{
+            color:rgba(255, 0, 0, 0.756);
+            text-size-adjust: 80%;
+            background-color: cornflowerblue;
+        }
+        form {
+            border: 2px solid black;
+        }
+        body {
+            background-image: url("https://www.123dentist.com/wp-content/uploads/2018/04/dental-emergency-travelling.jpg") ;
+            background-color: #cccccc;
+            background-size: 1500px;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1><u>Book your trip </u></h1>
+        
+        <img scr="https://ychef.files.bbci.co.uk/976x549/p08fgqkq.jpg" alt="Hongkong"/>
+        <img scr="https://eurosets.com/wp-content/uploads/2021/06/Duabi.jpg" alt="Duabi"/>
+        <img scr="https://www.planetware.com/wpimages/2020/03/singapore-in-pictures-beautiful-places-to-photograph-marina-bay-sands.jpg" alt="Singapour"/>
+        <img scr="https://bsmedia.business-standard.com/_media/bs/img/article/2020-06/17/full/1592382836-371.png?im=Resize,width=480" alt="Italy"/>
+
+
+        <pre><b><h2 class="1">
+        You are welcome here.
+
+        Plan your trip and book tickets easily from our page.
+        </h2></b></pre>
+    </br></br>
+        <pre><b><h2 class="2">
+Please fill the details required:
+        </h2></b></pre>
+        <form action="form.php">
+            <h3>NAME</h3>
+            <input type="text" placeholder="Enter your name">
+            <h3>MOBILE NUMBER</H3>
+            <label for="mobile number">
+                <input type="text" id="mobile number" name="mobile number" placeholder="mobile number">
+            </label>
+            <h3>WHERE YOU WANT TO GO</h3>
+            <select name="place" id="place">
+                <option value="Hongkong">Hongkong</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Singapour">Singapour</option>
+                <option value="Italy">Italy</option>
+            </select>
+            <h3>MODE OF TRANSPORTATION</h3>
+            <label for="transport1">
+                <input type="radio" name="transport" id="transport1">Airplane
+            </label>
+            <label for="transport2">
+                <input type="radio" name="transport" id="transport2">Train
+            </label>
+            <label for="transport3">
+                <input type="radio" name="transport" id="transport3">Bus
+            </label>
+            <label for="transport4">
+                <input type="radio" name="transport" id="transport4">Car
+            </label>
+            <h3>NUMBER OF TRAVELLERS</h3>
+            <label for="travellers">
+                <input type="number" name="travellers" id="travellers" value="2" min="1" max="10">
+            </label>
+            <h3>DATE OF DEPARTURE</h3>
+            <label for="trip start">
+                <input type="date" name="trip-start on" id="trip start" value="2022-05-01" min="2022-04-10">
+            </label>
+            <h3>NUMBER OF DAYS OF TRIP</h3>
+            <label for="trip days1">
+                <input type="radio" name="days" id="trip days1">2
+            </label>
+            <label for="trip days2">
+                <input type="radio" name="days" id="trip days2">5
+            </label>
+            <label for="trip days3">
+                <input type="radio" name="days" id="trip days3">7
+            </label>
+            <label for="trip days4">
+                <input type="radio" name="days" id="trip days4">10
+            </label><br>
+            <input type="button" class="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
